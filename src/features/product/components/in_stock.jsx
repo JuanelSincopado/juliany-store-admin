@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import ProductContext from "../context/product_context";
 
-const Checkbox = ({ visible }) => {
+const InStock = ({ status }) => {
   const { setProductToUpdate } = useContext(ProductContext);
 
   const handleInputChange = (e) => {
@@ -14,16 +14,18 @@ const Checkbox = ({ visible }) => {
 
   return (
     <div className="select__container">
-      <label htmlFor="visible">Visible</label>
-      <input
-        type="checkbox"
-        id="visible"
-        className="checkbox"
+      <label htmlFor="status">Disponibilidad</label>
+      <select
+        defaultValue={String(status)}
+        name="status"
+        id="status"
         onChange={handleInputChange}
-        defaultChecked={visible}
-      />
+      >
+        <option value={1}>Disponible</option>
+        <option value={2}>Agotado</option>
+      </select>
     </div>
   );
 };
 
-export default Checkbox;
+export default InStock;

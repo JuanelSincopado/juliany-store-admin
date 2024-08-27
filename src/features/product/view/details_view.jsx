@@ -9,6 +9,7 @@ import SelectCategory from "../components/select_category";
 import Checkbox from "../components/checkbox";
 import CountryPrice from "../components/country_price";
 import PrimaryButton from "../../../shared/components/primary_button";
+import InStock from "../components/in_stock";
 
 const DetailsView = () => {
   const { id } = useParams();
@@ -61,6 +62,8 @@ const DetailsView = () => {
       />
 
       <Checkbox visible={productToUpdate?.visible} />
+
+      <InStock status={productToUpdate?.status} />
 
       {productToUpdate && (
         <CountryPrice countryParams={productToUpdate?.country} />
