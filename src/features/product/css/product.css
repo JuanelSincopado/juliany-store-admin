@@ -1,0 +1,88 @@
+.details__container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 40px;
+}
+
+.edit__input_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    outline: none;
+  }
+}
+
+.image__udpate {
+  margin-top: 20px;
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5px;
+  }
+}
+
+.select__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  label {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
+
+.input__price_container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+
+  label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100px;
+  }
+
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}

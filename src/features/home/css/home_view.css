@@ -1,0 +1,222 @@
+.homeView__container {
+  padding: 40px;
+}
+
+.search__product {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  align-items: end;
+
+  .input-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    input {
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+
+  button {
+    height: 40px;
+  }
+}
+
+.homeview_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  justify-items: center;
+
+  .card_item {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 180px;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .card_item__info {
+      padding: 5px 10px;
+      background-color: var(--white);
+      border-radius: 0 0 15px 15px;
+
+      h3 {
+        font-size: 14px;
+        color: var(--black);
+        margin-bottom: 10px;
+      }
+
+      .card_item__description {
+        font-size: 14px;
+        color: var(--gris);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 2.8em;
+      }
+
+      .card_item__price {
+        font-size: 14px;
+        color: var(--green);
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        float: right;
+      }
+    }
+  }
+}
+
+.createProductModel__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .createProductModel__container {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .input__container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+
+      label {
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+
+    .uploadImage__container {
+      margin-top: 40px;
+
+      label {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .inputUploadImage__container {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .select__container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: start;
+
+      label {
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+    .input__price_container {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+
+      label {
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        width: 100px;
+      }
+
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
