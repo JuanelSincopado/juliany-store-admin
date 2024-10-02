@@ -117,7 +117,7 @@ const CreateProductModel = () => {
         {["Venezuela", "Colombia"].map((country) => (
           <div className="input__price_container" key={country}>
             <label>
-              Precio en {country === "Venezuela" ? "Bolívares" : "Pesos"}:
+              Precio en {country === "Venezuela" ? "Dólares" : "Pesos"}:
             </label>
             <input
               type="text"
